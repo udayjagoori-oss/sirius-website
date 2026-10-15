@@ -122,20 +122,30 @@ body{background:radial-gradient(ellipse at 50% -10%,rgba(45,79,157,.13),transpar
 @media(max-width:700px){.visual-world-grid{gap:10px}.visual-tile{min-height:195px}.visual-tile-wide{min-height:245px}.service-feature-image{height:245px}.project-image-wrap{height:365px}.process-visual{height:250px}.contact-form{box-shadow:0 15px 45px rgba(0,0,0,.2)}}
 @media(prefers-reduced-motion:reduce){.hero-image{animation:none}}
 
-/* SIRIUS — sticky navigation */
+
+/* SIRIUS — always-visible navigation */
 .site-header,
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 1000;
-  background: rgba(7, 12, 25, 0.92);
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10000;
+  box-sizing: border-box;
+  background: rgba(7, 12, 25, 0.94);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(125, 165, 255, 0.16);
+  border-bottom: 1px solid rgba(125, 165, 255, 0.2);
 }
 
-/* Keep anchor destinations visible below the header */
+/* Smooth scrolling and anchor spacing */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 110px;
+}
+
+/* Prevent page content from being hidden behind the fixed header */
+body {
+  padding-top: 100px;
 }
