@@ -3,7 +3,7 @@
 
   // CONFIGURE THESE TWO VALUES BEFORE LAUNCH.
   // Create a SIRIUS-specific endpoint at https://formspree.io/ so enquiries do not mix with another project.
-  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/REPLACE_WITH_SIRIUS_FORM_ID';
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xnpjlajp';
   // Enter digits only, including country code, e.g. 919876543210. Leave blank until confirmed.
   const WHATSAPP_NUMBER = '7678635065';
 
