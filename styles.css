@@ -1,4 +1,4 @@
-/* SIRIUS visual system — midnight, stellar blue, editorial typography */
+/* SIRIUS visual system â€” midnight, stellar blue, editorial typography */
 :root{--bg:#070910;--panel:#0c101a;--panel2:#111725;--line:rgba(230,236,255,.17);--line-strong:rgba(230,236,255,.31);--text:#f2f4fa;--muted:#b2bbce;--blue:#a8c1ff;--blue-bright:#d6e2ff;--max:1480px;--pad:clamp(22px,5.2vw,88px);--sans:'DM Sans',sans-serif;--display:'Manrope',sans-serif;--mono:'DM Mono',monospace}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}body.menu-open{overflow:hidden}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--blue);outline-offset:4px}img{display:block;width:100%;height:100%;object-fit:cover}.site-shell{max-width:var(--max);margin:auto;overflow:hidden;position:relative}.skip-link{position:absolute;top:-60px;left:16px;z-index:1000;background:#fff;color:#080a10;padding:12px}.skip-link:focus{top:16px}.announcement{height:34px;display:flex;align-items:center;justify-content:center;gap:10px;background:#0b0e16;border-bottom:1px solid var(--line);font:9px var(--mono);letter-spacing:.12em;color:#adb5c8}.status-dot,.live-mark i{width:5px;height:5px;background:#a8c1ff;border-radius:50%;box-shadow:0 0 10px #9ebaff;display:inline-block}.announcement-sep{color:#58627a}.site-header{height:84px;display:flex;align-items:center;justify-content:space-between;padding:0 var(--pad);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30;background:rgba(7,9,16,.82);backdrop-filter:blur(18px);transition:height .25s,border-color .25s}.site-header.is-scrolled{height:72px;border-color:rgba(168,193,255,.23)}.brand{display:inline-flex;align-items:center;gap:10px;font:800 18px var(--display);letter-spacing:.19em}.brand-mark{width:29px;height:29px;color:var(--blue);filter:drop-shadow(0 0 10px rgba(168,193,255,.2))}.primary-nav{display:flex;align-items:center;gap:clamp(20px,3vw,44px)}.primary-nav>a:not(.nav-cta){font-size:12px;color:#b9bfcc;transition:color .2s}.primary-nav>a:hover{color:#fff}.nav-cta{font:10px var(--mono);letter-spacing:.08em;border:1px solid var(--line-strong);padding:12px 16px;transition:background .25s,color .25s,border-color .25s}.nav-cta span{color:var(--blue);margin-left:12px}.nav-cta:hover{background:var(--text);color:var(--bg);border-color:var(--text)}.menu-toggle{display:none}.section-pad{padding-left:var(--pad);padding-right:var(--pad)}
 .hero{position:relative;min-height:760px;padding-top:clamp(74px,8.4vw,124px);padding-bottom:22px;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 75% 43%,rgba(49,75,142,.25),transparent 35%),linear-gradient(180deg,#070910 0%,#090d17 78%,#080a10 100%)}.hero-image{position:absolute;z-index:-3;inset:0 0 4% 30%;background-image:url('https://images.unsplash.com/photo-1462331940025-c4d7b2f3a4c5?auto=format&fit=crop&w=1800&q=85');background-size:cover;background-position:center;opacity:.28;mix-blend-mode:screen;mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.4) 20%,#000 70%),linear-gradient(180deg,#000 0%,#000 60%,transparent 100%);mask-composite:intersect;animation:heroImageDrift 28s ease-in-out infinite alternate}.hero-vignette{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,#070910 0%,rgba(7,9,16,.93) 35%,rgba(7,9,16,.24) 100%),linear-gradient(0deg,#080a10 0%,transparent 40%)}.hero-copy{position:relative;z-index:3;max-width:940px}.eyebrow,.section-kicker{font:10px var(--mono);letter-spacing:.12em;color:#aab4ca}.eyebrow{display:flex;align-items:center;gap:11px}.eyebrow-line{width:26px;height:1px;background:var(--blue);display:inline-block}.hero h1{font:800 clamp(60px,9.5vw,138px)/.91 var(--display);letter-spacing:-.09em;margin:31px 0 34px;max-width:1100px;text-wrap:balance}.headline-muted{color:#9ca8be}.headline-accent{color:var(--blue-bright);text-shadow:0 0 45px rgba(168,193,255,.14)}.period{color:var(--blue)}.hero-bottom{display:flex;align-items:flex-end;gap:clamp(28px,4vw,64px);max-width:850px}.hero-description{max-width:315px;color:#b3bac9;font-size:14px;line-height:1.85;margin:0}.hero-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.button{min-height:49px;display:inline-flex;align-items:center;justify-content:space-between;gap:24px;padding:0 18px;font:10px var(--mono);letter-spacing:.075em;border:1px solid transparent;cursor:pointer;transition:transform .25s cubic-bezier(.2,.8,.2,1),background .25s,color .25s,border-color .25s,box-shadow .25s}.button:hover{transform:translateY(-3px)}.button-light{background:#e8edfb;color:#080a10}.button-light:hover{background:var(--blue-bright);box-shadow:0 10px 35px rgba(168,193,255,.15)}.button-outline{border-color:rgba(226,234,255,.24);color:#e4e9f7;background:rgba(8,10,17,.28)}.button-outline:hover{border-color:var(--blue);background:rgba(168,193,255,.08)}.button span{font-size:16px}.hero-orbit{position:absolute;border:1px solid rgba(148,174,235,.15);border-radius:50%;z-index:-1;pointer-events:none;animation:orbitRotate 90s linear infinite}.orbit-one{width:min(61vw,760px);height:min(61vw,760px);right:-11%;top:2%;transform:rotate(-21deg)}.orbit-two{width:min(47vw,580px);height:min(47vw,580px);right:-3%;top:13%;border-style:dashed;opacity:.65;animation-direction:reverse;animation-duration:140s}.hero-stars{position:absolute;inset:0;z-index:-1;pointer-events:none}.hero-stars i{position:absolute;width:2px;height:2px;border-radius:50%;background:#e1e9ff;box-shadow:0 0 9px #a7c0ff;opacity:.72;animation:twinkle 4s ease-in-out infinite alternate}.hero-stars i:nth-child(1){left:58%;top:13%}.hero-stars i:nth-child(2){left:91%;top:24%;width:3px;height:3px;animation-delay:-2s}.hero-stars i:nth-child(3){left:73%;top:74%;animation-delay:-1s}.hero-stars i:nth-child(4){left:47%;top:61%;animation-delay:-3s}.hero-stars i:nth-child(5){left:84%;top:80%;animation-delay:-.5s}.hero-stars i:nth-child(6){left:67%;top:29%;animation-delay:-2.5s}.hero-stars i:nth-child(7){left:96%;top:58%;animation-delay:-1.5s}.hero-stars i:nth-child(8){left:55%;top:83%;animation-delay:-3.5s}.hero-stars i:nth-child(9){left:78%;top:10%;animation-delay:-1s}.hero-stars i:nth-child(10){left:39%;top:28%;animation-delay:-2.3s}.hero-stars i:nth-child(11){left:88%;top:45%;animation-delay:-3s}.hero-stars i:nth-child(12){left:63%;top:88%;animation-delay:-1.8s}.hero-orbit-label{position:absolute;z-index:2;left:var(--pad);right:var(--pad);display:flex;justify-content:space-between;gap:15px;font:8px var(--mono);letter-spacing:.12em;color:#a7b4cb}.label-top{top:35px}.label-bottom{bottom:77px}.live-mark{display:flex;align-items:center;gap:8px}.hero-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;position:relative;z-index:2;border-top:1px solid var(--line);margin-top:clamp(90px,12vw,158px);padding-top:16px;font:9px var(--mono);letter-spacing:.1em;color:#a1adc1}.hero-foot a{transition:color .2s}.hero-foot a:hover{color:#fff}.scroll-arrow{color:var(--blue);margin-left:8px}.hero-index{color:#abb3c5}.ticker{overflow:hidden;background:#dfe7f8;color:#0a0d16;padding:13px 0;transform:rotate(-.65deg) scale(1.01);margin:0 0 4px}.ticker-track{width:max-content;animation:ticker 30s linear infinite}.ticker-track span{font:10px var(--mono);letter-spacing:.1em;white-space:nowrap}.ticker b{padding:0 23px;color:#607db8;font-size:15px}@keyframes ticker{to{transform:translateX(-50%)}}@keyframes twinkle{from{opacity:.25;transform:scale(.65)}to{opacity:.9;transform:scale(1.25)}}@keyframes orbitRotate{to{rotate:360deg}}@keyframes heroImageDrift{from{transform:scale(1) translate3d(0,0,0)}to{transform:scale(1.07) translate3d(-1%,1%,0)}}
@@ -43,7 +43,7 @@
 @media(max-width:700px){.visual-world-grid{grid-template-columns:1fr 1fr;gap:9px}.visual-tile-wide{grid-column:1/-1;min-height:235px}.visual-tile{min-height:180px}.visual-world-heading{font-size:7px}.visual-tile figcaption{left:12px;right:12px;bottom:12px}.visual-tile figcaption strong{font-size:10px}.process-visual{height:230px;margin-bottom:24px}.process-visual-overlay{font-size:7px;flex-direction:column;gap:7px}.hero-image{opacity:.36}.hero-vignette{background:linear-gradient(90deg,rgba(7,9,16,.88),rgba(7,9,16,.35)),linear-gradient(0deg,#080a10 0%,transparent 40%)}}
 @media(prefers-reduced-motion:reduce){.visual-tile img,.process-visual img{transition:none}}
 
-/* SIRIUS VISUAL UPGRADE — stronger contrast, richer imagery, more cinematic light */
+/* SIRIUS VISUAL UPGRADE â€” stronger contrast, richer imagery, more cinematic light */
 :root{--bg:#070a13;--panel:#0e1422;--panel2:#131d31;--line:rgba(220,231,255,.2);--line-strong:rgba(220,231,255,.38);--text:#f7f9ff;--muted:#c0cadc;--blue:#9dbdff;--blue-bright:#e3ecff}
 body{background:radial-gradient(ellipse at 50% -10%,rgba(45,79,157,.13),transparent 34%),var(--bg)}
 .announcement{background:linear-gradient(90deg,#0a0e18,#111a2c 50%,#0a0e18);color:#d4def2}
@@ -123,7 +123,7 @@ body{background:radial-gradient(ellipse at 50% -10%,rgba(45,79,157,.13),transpar
 @media(prefers-reduced-motion:reduce){.hero-image{animation:none}}
 
 
-/* SIRIUS — always-visible navigation */
+/* SIRIUS â€” always-visible navigation */
 .site-header,
 header {
   position: fixed;
@@ -148,4 +148,99 @@ html {
 /* Prevent page content from being hidden behind the fixed header */
 body {
   padding-top: 100px;
+}
+
+/* SIRIUS CONTACT UPGRADE â€” larger WhatsApp CTA + project info panel */
+.whatsapp-link {
+  width: 100%;
+  max-width: 440px;
+  min-height: 92px;
+  gap: 17px;
+  margin-top: 30px;
+  padding: 21px 22px;
+  border-color: rgba(157, 189, 255, .48);
+  background: linear-gradient(120deg, rgba(35, 52, 84, .88), rgba(13, 20, 35, .92));
+  box-shadow: 0 14px 42px rgba(0, 0, 0, .18), inset 0 1px rgba(255,255,255,.04);
+}
+.whatsapp-link:hover {
+  border-color: rgba(190, 211, 255, .85);
+  background: linear-gradient(120deg, rgba(43, 65, 106, .92), rgba(15, 24, 42, .96));
+  box-shadow: 0 18px 48px rgba(48, 82, 155, .18);
+}
+.whatsapp-icon {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  font-size: 22px;
+  background: rgba(157, 189, 255, .08);
+  border-color: rgba(190, 211, 255, .45);
+}
+.whatsapp-link strong { font-size: 11px; letter-spacing: .075em; }
+.whatsapp-link small { font-size: 12px; line-height: 1.5; }
+.whatsapp-arrow { font-size: 20px; }
+
+/* Styling for a meaningful project-prep panel to add below the WhatsApp card */
+.contact-project-note {
+  max-width: 440px;
+  margin-top: 24px;
+  padding: 22px 23px;
+  border: 1px solid rgba(157, 189, 255, .24);
+  background: linear-gradient(135deg, rgba(23, 34, 57, .72), rgba(10, 15, 26, .5));
+}
+.contact-project-note .note-kicker {
+  margin: 0 0 11px;
+  color: #b9ceff;
+  font: 9px var(--mono);
+  letter-spacing: .12em;
+}
+.contact-project-note h3 {
+  margin: 0 0 9px;
+  color: #f4f7ff;
+  font: 700 20px/1.2 var(--display);
+  letter-spacing: -.035em;
+}
+.contact-project-note p {
+  margin: 0;
+  color: #c0cadc;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.contact-project-note ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px 14px;
+  margin: 17px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.contact-project-note li { color: #dce5f7; font-size: 11px; }
+.contact-project-note li::before {
+  content: "â†—";
+  margin-right: 8px;
+  color: var(--blue);
+}
+
+/* Reusable style for a WhatsApp CTA placed near the top; HTML link still required */
+.whatsapp-top-cta {
+  min-height: 54px;
+  padding: 0 22px;
+  gap: 16px;
+  border: 1px solid rgba(190, 211, 255, .62);
+  background: linear-gradient(110deg, #eaf0ff, #b8ceff);
+  color: #080d19;
+  box-shadow: 0 10px 34px rgba(82, 124, 221, .22);
+  font-size: 10px;
+}
+.whatsapp-top-cta:hover {
+  background: #f5f7ff;
+  box-shadow: 0 14px 42px rgba(82, 124, 221, .32);
+}
+.whatsapp-top-cta span { font-size: 18px; }
+
+@media (max-width: 700px) {
+  .whatsapp-link { max-width: 100%; min-height: 88px; padding: 18px; }
+  .whatsapp-icon { flex-basis: 44px; width: 44px; height: 44px; }
+  .contact-project-note { max-width: 100%; padding: 19px; }
+  .contact-project-note ul { grid-template-columns: 1fr 1fr; }
+  .whatsapp-top-cta { width: 100%; min-height: 52px; }
 }
