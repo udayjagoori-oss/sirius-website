@@ -62,3 +62,15 @@
 @media(max-width:900px){.pricing-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pricing-card:last-child{grid-column:1/-1}}
 @media(max-width:600px){.pricing-grid{grid-template-columns:minmax(0,1fr);gap:15px}.pricing-card:last-child{grid-column:auto}.pricing-card{padding:26px 21px 23px}.pricing-description{min-height:0}.pricing-amount{font-size:38px}.pricing-note{padding:16px}.pricing-bottomline{flex-direction:column}}
 @media(prefers-reduced-motion:reduce){.pricing-card,.pricing-card:hover{transition:none;transform:none}}
+/* SIRIUS pricing refinements */
+.pricing-badge{position:absolute;top:24px;right:22px;margin:0}
+.pricing-monthly{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px;margin:0 0 18px;padding:11px 13px;border:1px solid var(--line);background:rgba(168,193,255,.05);color:var(--muted);font:10px var(--mono);letter-spacing:.08em}
+.pricing-monthly strong{color:var(--blue-bright);font:800 22px var(--display);letter-spacing:-.04em}
+.pricing-card-featured .pricing-monthly{border-color:rgba(168,193,255,.45);background:rgba(168,193,255,.1)}
+.pricing-features .pricing-includes{color:var(--text)}
+.pricing-terms{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:18px}
+.pricing-terms>div{padding:18px 20px;border:1px solid var(--line)}
+.pricing-terms h3{margin:0 0 8px;font:9px var(--mono);letter-spacing:.1em;color:var(--blue)}
+.pricing-terms p{margin:0;color:var(--muted);font-size:12px;line-height:1.8}
+.pricing-bottomline{color:#8995aa}
+@media(max-width:900px){.pricing-terms{grid-template-columns:1fr}}
